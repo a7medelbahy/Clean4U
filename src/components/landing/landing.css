@@ -1,0 +1,16 @@
+.landing {
+  background-color: var(--blue-color);
+}
+.landing .landing-content h5 {
+  color: var(--yellow-color);
+}
+.landing .landing-content .main-btn {
+  background-color: transparent;
+  border: 1px solid var(--green-color);
+}
+.landing .landing-content .main-btn:hover::after {
+  background-color: var(--green-color);
+}
+#example-modal-sizes-title-lg {
+  color: var(--blue-color);
+}

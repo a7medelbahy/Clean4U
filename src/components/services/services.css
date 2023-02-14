@@ -1,0 +1,47 @@
+.services {
+  background-color: var(--secondary-background-color);
+}
+.services .service-box {
+  border: 1px solid #ccc;
+  transition: var(--main-transition);
+}
+.services .service-box .service-icon {
+  color: var(--green-color);
+  transition: var(--main-transition);
+}
+.services .service-box h3 {
+  color: var(--blue-color);
+  transition: var(--main-transition);
+}
+.services .service-box .service-desc {
+  color: var(--grey-color);
+  transition: var(--main-transition);
+}
+.services .service-box:hover .btn-more p {
+  color: white;
+}
+.services .service-box:hover .btn-more i {
+  color: var(--blue-color);
+}
+.services .service-box:hover .more-btn {
+  color: white;
+}
+.services .service-box .more-btn::after {
+  background-color: white;
+}
+.services .service-box .more-btn:hover {
+  color: var(--green-color);
+  box-shadow: 0px 0px 5px 3px var(--green-color);
+}
+
+.services .service-box:hover {
+  background-color: var(--green-color);
+}
+.services .service-box:hover .service-icon,
+.services .service-box:hover h3,
+.services .service-box:hover .service-desc {
+  color: white;
+}
+.services .service-box:hover .service-icon {
+  transform: rotateY(360deg);
+}

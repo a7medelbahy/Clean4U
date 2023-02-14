@@ -1,0 +1,17 @@
+.footer {
+  background-color: var(--secondary-background-color);
+}
+.footer .footer-logo img {
+  width: 50px;
+}
+.footer .footer-logo h3 {
+  color: var(--blue-color);
+}
+.footer .footer-desc p {
+  color: var(--grey-color);
+  font-weight: bold;
+}
+.footer .footer-desc p span {
+  color: var(--green-color);
+  font-weight: bolder;
+}

@@ -1,13 +1,162 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
+
+/* Public Rules  */
+*,
+*::after,
+*::before {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+}
+a {
+  text-decoration: none !important;
+  transition: var(--main-transition);
+}
+button {
+  background: none;
+  cursor: pointer;
+}
+html {
+  scroll-behavior: smooth;
+}
+body, #root {
+  line-height: 1.7;
+  font-family: "Jost", sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+}
+:root {
+  --blue-color: #13287d;
+  --green-color: #279e64;
+  --grey-color: #83868c;
+  --yellow-color: #ffc600;
+  --secondary-background-color: #efefef;
+  --section-padding: 70px;
+  --main-transition: 0.3s;
+}
+.section-padding {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.main-btn {
+  padding: 0.5em 1.5em;
+  background-color: transparent;
+  color: var(--yellow-color);
+  border: 1px solid var(--yellow-color);
+  font-weight: bold;
+  border-radius: 25px;
+  transition: var(--main-transition);
+  position: relative;
+  overflow: hidden;
+  width: fit-content;
+  z-index: 1;
+}
+.main-btn::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  background-color: var(--yellow-color);
+  transition: var(--main-transition);
+  z-index: -1;
+}
+.main-btn:hover {
+  color: white;
+}
+.main-btn:hover::after {
+  width: 100%;
+  height: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Public Components  */
+.social-icons ul li {
+  background-color: var(--secondary-background-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: var(--main-transition);
+}
+.social-icons ul li a {
+  color: var(--blue-color);
+  font-size: 18px;
+}
+.social-icons ul li:hover {
+  animation: socialIcon 0.5s infinite linear;
+  background-color: var(--green-color);
+}
+.social-icons ul li:hover a {
+  color: white;
+}
+@keyframes socialIcon {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.09);
+  }
+}
+.modal {
+  z-index: 11000;
+}
+
+.main-heading h6 {
+  color: var(--green-color);
+}
+.main-heading h2 {
+  color: var(--blue-color);
+}
+.btn-more p {
+  color: var(--blue-color);
+}
+.btn-more p + i {
+  color: var(--grey-color);
+  animation: morebtn 0.5s infinite;
+}
+@keyframes morebtn {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(7px);
+  }
+}
+.more-btn {
+  padding: 0.5em 0.75em;
+  color: var(--green-color);
+  transition: var(--main-transition);
+  z-index: 1;
+}
+.more-btn::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--green-color);
+  transition: var(--main-transition);
+  z-index: -1;
+}
+.more-btn:hover::after {
+  width: 100%;
+  height: 100%;
+}
+.more-btn:hover {
+  color: white;
+  box-shadow: 0px 0px 5px 3px var(--green-color);
+}
+.up-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  transition: var(--main-transition);
 }

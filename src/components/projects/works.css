@@ -1,0 +1,28 @@
+.projects .project-box {
+  height: 350px;
+}
+.projects .project-box .project-details {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: -100%;
+  background-color: rgb(19 40 125 / 75%);
+  opacity: 0;
+  transition: var(--main-transition);
+}
+.projects .project-box:hover .project-details {
+  left: 0;
+  opacity: 1;
+}
+.projects .project-box .project-details .btn-more p {
+  color: var(--yellow-color);
+}
+.gallery .gallery-box {
+  cursor: zoom-in;
+}
+.gallery .gallery-box img {
+  transition: var(--main-transition);
+}
+.gallery .gallery-box:hover img {
+  transform: scale(1.05);
+}

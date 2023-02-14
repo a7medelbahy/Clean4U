@@ -1,0 +1,39 @@
+.about {
+  background-color: var(--secondary-background-color);
+}
+.about .main-content p {
+  color: var(--grey-color);
+}
+.about .main-content .about-years .years h3 {
+  color: var(--blue-color);
+}
+.about .main-content .about-years .years h3 span {
+  color: var(--green-color);
+}
+.about .about-project p {
+  color: var(--grey-color);
+}
+.about .about-project .project-feature h4 {
+  color: var(--blue-color);
+}
+.about .about-project .project-feature h3 {
+  background-color: var(--green-color);
+  color: white;
+  transition: var(--main-transition);
+}
+.about .about-project .project-feature:hover h3 {
+  animation: projectFeat infinite 0.5s;
+}
+@keyframes projectFeat {
+  0%,
+  50%,
+  100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(7px);
+  }
+  75% {
+    transform: translateY(-7px);
+  }
+}

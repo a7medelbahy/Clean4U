@@ -1,0 +1,12 @@
+.we-are p {
+  color: var(--grey-color);
+}
+.intro-tips h5 {
+  color: var(--green-color);
+}
+.intro-tips h4 {
+  color: var(--blue-color);
+}
+.intro-tips p {
+  color: var(--grey-color);
+}

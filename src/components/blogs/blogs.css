@@ -1,0 +1,34 @@
+.blogs .blogs-content {
+  border: 1px solid var(--grey-color);
+  box-shadow: 0px 0px 5px 2px var(--green-color);
+}
+.blogs .nav {
+  border-color: var(--yellow-color);
+}
+.blogs .nav .nav-link {
+  font-weight: bold;
+  font-size: 16px;
+  color: var(--green-color);
+}
+.blogs .nav .nav-link.active {
+  color: var(--blue-color);
+  border-color: var(--yellow-color);
+  border-bottom: none;
+}
+.blogs .blogs-content .blog-box .blog-box-content h2 {
+  color: var(--blue-color);
+}
+.blogs .blogs-content .blog-box .blog-box-content .blog-info i {
+  color: var(--green-color);
+}
+.blogs .blogs-content .blog-box .blog-box-content span {
+  color: var(--grey-color);
+  font-weight: bold;
+  font-size: 14px;
+}
+.blogs .blogs-content .blog-box .blog-box-content .content {
+  color: var(--grey-color);
+}
+.blogs .blogs-content .blog-box .more-btn {
+  cursor: pointer;
+}

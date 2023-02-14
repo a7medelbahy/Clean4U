@@ -1,0 +1,16 @@
+.news .news-box {
+  border: 1px solid #ccc;
+}
+.news .news-box .news-img img {
+  transition: var(--main-transition);
+}
+.news .news-box .news-img:hover img {
+  transform: scale(1.05);
+}
+.news .news-box .news-details p,
+.news .news-box .news-details h5 {
+  color: var(--blue-color);
+}
+.news .news-box .news-details p small {
+  color: var(--grey-color);
+}

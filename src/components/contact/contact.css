@@ -1,0 +1,17 @@
+.contact .contact-info ul li {
+  font-size: 18px;
+  font-weight: bold;
+}
+.contact .contact-info ul li {
+  color: var(--blue-color);
+}
+.contact .contact-info ul li i {
+  color: var(--green-color);
+}
+.contact .contact-form textarea {
+  height: 150px;
+  resize: none;
+}
+.contact .contact-map {
+  height: 400px;
+}

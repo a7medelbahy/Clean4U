@@ -1,0 +1,23 @@
+.stats {
+  background-color: var(--blue-color);
+}
+.stats .stat-box .stat-icon {
+  border: 2px dotted white;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+.stats .stat-box .stat-icon i {
+  transition: var(--main-transition);
+}
+.stats .stat-box .stat-icon:hover i {
+  animation: stats infinite 0.7s;
+}
+@keyframes stats {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}

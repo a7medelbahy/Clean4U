@@ -1,0 +1,8 @@
+.more-info {
+  background-color: var(--green-color);
+}
+.more-info .main-btn {
+  background-color: white;
+  color: var(--green-color);
+  border-color: var(--green-color);
+}
